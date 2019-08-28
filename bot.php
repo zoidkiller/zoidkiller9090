@@ -34,7 +34,7 @@ Jika ada pesan masuk pada console ditandai +
 function myloop()
 {
     global $debug;
-   $idfile = 'botposesid.text';
+   $idfile = 'botposesid.txt';
     $update_id = 0;
 
     if (file_exists($idfile)) {
