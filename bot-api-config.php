@@ -4,7 +4,7 @@ if (!defined('HS')) {
     die('Tidak boleh diakses langsung.');
 }
 
-$token = '942962676:AAHXJXq6eQM73T1lEbZ3_BWc7T_urgd9PgY';
+$token = '945647767:AAHEWqCKVj9B45fmUF1Kb1P8e23ZULaE5JY';
 $debug = false;
 
-$chatid = '942962676';
+$chatid = '945647767';
