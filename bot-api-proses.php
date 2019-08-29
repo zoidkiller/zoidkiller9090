@@ -151,8 +151,7 @@ function prosesPesanTeks($message)
     $chatid = $message['chat']['id'];
     $fromid = $message['from']['id'];
     
-    $namamu = $sumber['from']['first_name'];
-        $iduser = $sumber['from']['id'];
+
         
     switch (true) {
            
