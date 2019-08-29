@@ -224,7 +224,7 @@ $keyboard = [
             sendApiKeyboard($chatid, '🔻 STEP1
  [ Submit Contact ]', $keyboard);
  } else {
- 	$text = silahkan ikuti langkah pendaftaran
+ 	$text = 'silahkan ikuti langkah pendaftaran';
  }
             break;
             
@@ -239,7 +239,7 @@ $keyboard = [
             sendApiKeyboard($chatid, '🔻 STEP2
  [ Submit location ]', $keyboard);
  } else {
- 	$text = silahkan ikuti langkah pendaftaran
+ 	$text = 'silahkan ikuti langkah pendaftaran';
  }
             break;
             
