@@ -202,16 +202,7 @@ Facebook  : https://www.facebook.com/sanusi.nagbejen
             sendApiKeyboard($chatid, 'SILAHKAN PILIH YANG MAU DI BELI', $inkeyboard, true);
             break;
 
- case $pesan == '!hide':
-            sendApiAction($chatid);
-            sendApiHideKeyboard($chatid, 'keyboard off');
-            break;
-        case preg_match("/\/echo (.*)/", $pesan, $hasil):
-            sendApiAction($chatid);
-            $text = '*Echo:* '.$hasil[1];
-            sendApiMsg($chatid, $text, false, 'Markdown');
-            break;
-
+ 
 
         case $pesan == '/start';
 if(isset($pecah[1])) {
