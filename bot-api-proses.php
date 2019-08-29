@@ -202,7 +202,7 @@ Facebook  : https://www.facebook.com/sanusi.nagbejen
 
 
         case $pesan == '/start';
-sendApiAction($chatid, $pesanproses);
+sendApiAction($chatid);
 $keyboard = [
                 ['text' =>'Nomor Hp','request_contact' => true,'callback_data' => '/step2'],
             ];
