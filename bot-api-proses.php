@@ -203,7 +203,7 @@ Facebook  : https://www.facebook.com/sanusi.nagbejen
         case $pesan == '/start';
 sendApiAction($chatid);
 $keyboard = [
-                ['text' =>'Nomor Hp','request_contact' => true,'callback_data' => '/step2'],
+                ['text' =>'Nomor Hp','request_contact' => true],
             ];
             sendApiKeyboard($chatid, '🔻 STEP1
  [ Submit Contact ]', $keyboard);
@@ -212,7 +212,7 @@ $keyboard = [
             case $pesan = '/step2';
 sendApiAction($chatid);
 $keyboard = [
-                ['text' =>'Location','request_location' => true,'callback_data' => '/menu']
+                ['text' =>'Location','request_location' => true]
             ];
             sendApiKeyboard($chatid, '🔻 STEP2
  [ Submit location ]', $keyboard);
