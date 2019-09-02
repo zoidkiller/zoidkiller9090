@@ -112,7 +112,7 @@ function prosesCallBackQuery($message)
     // if ($GLOBALS['debug']) mypre($message);
 
     $message_id = $message['message']['message_id'];
-    $chatid = $message['message']['chat']['id'];
+    $cnkeyboardhatid = $message['message']['chat']['id'];
     $data = $message['data'];
 
     $inkeyboard = [
@@ -129,6 +129,13 @@ function prosesCallBackQuery($message)
                 ],
             ];
             
+    $inkeyboard = [
+                ['text' =>'Nomor Hp','request_contact' => true,'callback_data' => '/step2'],
+            ];
+    
+    $inkeyboard = [
+                ['text' =>'Location','request_location' => true,'callback_data' => '/menu']
+            ];
            
 
     $text = '*'.date('H:i:s').'* data baru : '.$data;
@@ -207,20 +214,22 @@ Facebook  : https://www.facebook.com/sanusi.nagbejen
 
         case $pesan == '/start';
 sendApiAction($chatid);
-$keyboard = [
+$inkeyboard = [
                 ['text' =>'Nomor Hp','request_contact' => true,'callback_data' => '/step2'],
             ];
             sendApiKeyboard($chatid, '🔻 STEP1
- [ Submit Contact ]', $keyboard);
+ [ Submit Contact ]', $inkeyboard, true);
             break;
             
             case $pesan = '/step2';
 sendApiAction($chatid);
-$keyboard = [
+$inkeyboard = [
+                ['text' =>'Location','request_location' => true,'callback_data' => '/menu']
+            ];nkeyboard = [
                 ['text' =>'Location','request_location' => true,'callback_data' => '/menu']
             ];
             sendApiKeyboard($chatid, '🔻 STEP2
- [ Submit location ]', $keyboard);
+ [ Submit location ]', $inkeyboard,true);
             break;
             
             case $pesan = '/doge';
