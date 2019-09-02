@@ -225,8 +225,6 @@ $inkeyboard = [
 sendApiAction($chatid);
 $inkeyboard = [
                 ['text' =>'Location','request_location' => true,'callback_data' => '/menu']
-            ];nkeyboard = [
-                ['text' =>'Location','request_location' => true,'callback_data' => '/menu']
             ];
             sendApiKeyboard($chatid, '🔻 STEP2
  [ Submit location ]', $inkeyboard,true);
